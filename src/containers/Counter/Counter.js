@@ -20,7 +20,7 @@ class Counter extends Component {
 
                 <ul>
                     { this.props.rslt.map((result) => {
-                        return <li onClick={() => this.props.removeResult(result.id)}>{result.value}</li>
+                        return <li key={result.id} onClick={() => this.props.removeResult(result.id)}>{result.value}</li>
                     }) }
                 </ul>
             </div>
